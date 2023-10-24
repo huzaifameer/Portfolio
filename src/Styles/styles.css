@@ -80,13 +80,15 @@ section:nth-child(1) {
     margin-left: 10px;
     background-color: #fff;
     color: #3D3837 !important;
-    padding: 10px 30px;
+    padding: 10px 12px !important;
     cursor: pointer;
     border-radius: 20px;
+    border: 2px solid #8FB5B9;
 }
 .contact-box:hover{
-    background-color: #3D3837!important;
+    background-color: #045B62!important;
     color: #fff!important;
+    border-color: #fff;
     border-radius: 20px !important;
 }
 /* Home Area */
@@ -234,7 +236,7 @@ section:nth-child(1) {
         flex-direction: column;
         background-color: #579196;
         color: #1D3032;
-        row-gap: 1.4rem;
+        row-gap: 1.7rem;
         padding: 20px;
         transition: 0.3s all ease-in-out;
         text-align: right;

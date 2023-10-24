@@ -6,7 +6,7 @@ const navbarMin = document.querySelector(".navbar");
 window.addEventListener("scroll", function () {
     // Check the scroll position
     if (window.scrollY > 100) { // Change 100 to the desired scroll position
-        navbar.style.backgroundColor = "#011321"; // Change to the desired background color
+        navbar.style.backgroundColor = "#01282B"; // Change to the desired background color
     } else {
         navbar.style.backgroundColor = "transparent"; // Restore the initial background color
     }

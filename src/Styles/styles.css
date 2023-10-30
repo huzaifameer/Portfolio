@@ -12,7 +12,7 @@
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 body {
@@ -263,13 +263,14 @@ section:nth-child(1) {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: #E2EEF8;
 }
 .container .owner-wrapper{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 100%;
     padding: 10px 30px;
@@ -278,8 +279,9 @@ section:nth-child(1) {
 .container .owner-wrapper .image{
     width: 250px;
     height: 280px;
-    background-color: #8FB5B9;
-    padding: 10px;
+    background-color: #333331;
+    padding: 5px;
+    margin: 14px;
     /*border-radius: 12px;*/
 }
 .container .owner-wrapper .image img{
@@ -291,4 +293,95 @@ section:nth-child(1) {
 }
 
 /*Bottom Area*/
-
+/*footer*/
+.footer{
+    user-select: none;
+    background-color: #333331;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+}
+.footer-box h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #A49687;
+}
+.footer-box p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+    color: #ffeeee;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-top: 25px;
+}
+.social a .bx{
+    text-decoration: none;
+    color: #ffeeee;
+    font-size: 24px;
+    background-color: #605246;
+    border-radius: .2rem;
+    padding: 2px;
+}
+.social a .bx:hover{
+    background-color: #ffeeee;
+    color: #36322D;
+    transition: 0.3s all ease-in-out;
+}
+.footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #C2B9AF;
+}
+.footer-box li{
+    padding-bottom: 7px;
+}
+.footer-box li a{
+    color: #A49687;
+}
+.footer-box li a:hover{
+    color: #fff;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    color: #C2B9AF;
+}
+.contact span{
+    display: flex;
+    align-items: center;
+}
+.contact i{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.copyright{
+    padding: 20px;
+    background-color: #777775;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+/*footer*/
+/*About Page*/
+.about-box{
+    width: 100%;
+    height: 55vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Assets/About-Page.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about-box span{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #CCE4FD;
+}
+/*About Page*/

@@ -295,6 +295,7 @@ section:nth-child(1) {
 /*Bottom Area*/
 /*footer*/
 .footer{
+    padding: 16px;
     user-select: none;
     background-color: #333331;
     display: grid;
@@ -305,7 +306,7 @@ section:nth-child(1) {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #A49687;
+    color: #A4A4A3;
 }
 .footer-box p{
     font-size: 0.938rem;
@@ -322,25 +323,25 @@ section:nth-child(1) {
     text-decoration: none;
     color: #ffeeee;
     font-size: 24px;
-    background-color: #605246;
+    background-color: #777775;
     border-radius: .2rem;
     padding: 2px;
 }
 .social a .bx:hover{
     background-color: #ffeeee;
-    color: #36322D;
+    color: #333331;
     transition: 0.3s all ease-in-out;
 }
 .footer-box h3{
     font-weight: 600;
     margin-bottom: 10px;
-    color: #C2B9AF;
+    color: #777775;
 }
 .footer-box li{
     padding-bottom: 7px;
 }
 .footer-box li a{
-    color: #A49687;
+    color: #777775;
 }
 .footer-box li a:hover{
     color: #fff;
@@ -348,8 +349,8 @@ section:nth-child(1) {
 .contact{
     display: flex;
     flex-direction: column;
-    row-gap: 0.4rem;
-    color: #C2B9AF;
+    row-gap: 0.8rem;
+    color: #D1D1D1;
 }
 .contact span{
     display: flex;

@@ -187,6 +187,7 @@ section:nth-child(1) {
     height: 60px;
     line-height: 60px;
     overflow: hidden;
+    border-radius: 25px;
 }
 .dynamic-txts li{
     list-style: none;
@@ -197,7 +198,6 @@ section:nth-child(1) {
     top: 0;
     animation: slide 12s steps(4) infinite;
     background-color: #fff;
-    /*border-radius: 15px;*/
     padding-left: 10px;
     padding-right: 10px;
 }

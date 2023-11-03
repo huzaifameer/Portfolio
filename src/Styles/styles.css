@@ -381,16 +381,18 @@ section:nth-child(1) {
 /*-----About Page-----*/
 .about-box{
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Assets/About-Page.png");
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-box span{
     position: absolute;
     top: 50%;
-    left: 40%;
     font-weight: 600;
     font-size: 4rem;
     color: #CCE4FD;

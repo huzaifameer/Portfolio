@@ -267,42 +267,6 @@ section:nth-child(1) {
     }*/
 }
 
-/*Bottom Area*/
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: #E2EEF8;
-}
-.container .owner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px 30px;
-    background-color: #0B0B09;
-}
-.container .owner-wrapper .image{
-    width: 250px;
-    height: 280px;
-    background-color: #333331;
-    padding: 5px;
-    margin: 14px;
-    /*border-radius: 12px;*/
-}
-.container .owner-wrapper .image img{
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-}
-
-/*Bottom Area*/
 /*footer*/
 .footer{
     padding: 16px;
@@ -426,7 +390,7 @@ section:nth-child(1) {
 }
 .p-header nav ul li a:hover{
     background-color: #ffffff;
-    color: #262B40;
+    color: #0B0B09;
     border-color: #ffffff;
 }
 @media only screen and (max-width: 900px) {
@@ -459,13 +423,58 @@ section:nth-child(1) {
     }
 }
 /*personal nav*/
+/*social-container*/
+.social-media-container{
+    width: 100%;
+    height: 25vh;
+}
+/*social-container*/
 /*personal-details*/
+#personal-details{
+    height: auto;
+}
 .personal-details{
     width: 100%;
     height: 100vh;
     background-color: #082E42;
 }
 /*personal-details*/
+/*Bottom Area*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #E2EEF8;
+}
+.container .owner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px;
+    background-color: #0B0B09;
+}
+.container .owner-wrapper .image{
+    width: 250px;
+    height: 280px;
+    background-color: #333331;
+    padding: 5px;
+    margin: 14px;
+    /*border-radius: 12px;*/
+}
+.container .owner-wrapper .image img{
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/*Bottom Area*/
 /*-----About Page-----*/
 
 

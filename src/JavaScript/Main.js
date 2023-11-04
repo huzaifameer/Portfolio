@@ -9,10 +9,10 @@ window.addEventListener("scroll", function () {
     // Check the scroll position
     if (window.scrollY > 80) { // Change 100 to the desired scroll position
         navbar.style.backgroundColor = "#0B0B09"; // Change to the desired background color
-        subNav.style.backgroundColor="#0B0B09";
+        /*subNav.style.backgroundColor="#0B0B09";*/
     } else {
         navbar.style.backgroundColor = "transparent"; // Restore the initial background color
-        subNav.style.backgroundColor="transparent";
+        /*subNav.style.backgroundColor="transparent";*/
     }
 });
 

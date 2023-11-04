@@ -476,7 +476,7 @@ section:nth-child(1) {
     width: 250px;
     height: 280px;
     background-color: #567D80;
-    padding: 5px;
+    padding: 10px;
     margin: 14px;
     border-radius: 50px;
 }
@@ -487,7 +487,30 @@ section:nth-child(1) {
     height: 100%;
     border-radius: 50%;
 }
-
+.back-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding: 18px 0;
+}
+.back-top a h3{
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #045B62;
+    /*border: 2px solid #ffffff;*/
+}
+.back-top h3 a{
+    text-decoration: none;
+}
+.back-top a h3:hover{
+    background-color: #1D3032;
+    color: #ffffff;
+    border:2px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
 /*Bottom Area*/
 /*-----About Page-----*/
 

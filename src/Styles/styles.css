@@ -426,24 +426,27 @@ section:nth-child(1) {
 /*social-container*/
 .social-media-container{
     width: 100%;
-    height: 25vh;
+    height: 40vh;
+    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
 }
 /*social-container*/
 /*personal-details*/
-#personal-details{
+#personal{
+    /*padding-top: 10px;*/
+    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
     height: auto;
 }
 .personal-details{
+    padding-top: 10px;
     width: 100%;
     height: 100vh;
-    background-color: #023C41;
 }
 /*personal-details*/
 /*Bottom Area*/
 #gallery{
     padding-top: 20px;
     display: block;
-    background-color: #023C41;
+    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
 }
 .gallery-text{
     color: #ffffff;
@@ -467,7 +470,7 @@ section:nth-child(1) {
     width: 100%;
     height: 100%;
     padding: 10px 30px;
-    background-color: #023C41;
+    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
 }
 .container .owner-wrapper .image{
     width: 250px;

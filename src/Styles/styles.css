@@ -500,7 +500,7 @@ section:nth-child(1) {
     border-radius: 20px;
     cursor: pointer;
     color: #045B62;
-    /*border: 2px solid #ffffff;*/
+    border: 2px solid #ffffff;
 }
 .back-top h3 a{
     text-decoration: none;

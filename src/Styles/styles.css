@@ -426,20 +426,34 @@ section:nth-child(1) {
 /*social-container*/
 .social-media-container{
     width: 100%;
-    height: 40vh;
-    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
+    height: 20vh;
+   /* background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);*/
 }
 /*social-container*/
 /*personal-details*/
 #personal{
-    /*padding-top: 10px;*/
-    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
+    padding-top: 15px;
+    /*background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);*/
     height: auto;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    margin: 15px;
 }
 .personal-details{
     padding-top: 10px;
     width: 100%;
-    height: 100vh;
+    height: auto;
+}
+.personal-details h1{
+    padding-left: 18px;
+    font-size: 2rem;
+}
+.personal-details p{
+    display: grid;
+    text-align: justify;
+    padding: 24px;
+    line-height: 1.6rem;
 }
 /*personal-details*/
 /*Bottom Area*/

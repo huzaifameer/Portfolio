@@ -355,10 +355,12 @@ section:nth-child(1) {
     justify-content: center;
 }
 .about-box span{
+    display: grid;
     position: absolute;
     top: 50%;
     font-weight: 600;
     font-size: 4rem;
+    padding: 12px;
     color: #CCE4FD;
 }
 /*personal nav*/

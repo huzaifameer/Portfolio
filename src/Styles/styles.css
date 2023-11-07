@@ -429,23 +429,21 @@ section:nth-child(1) {
 .social-media-container{
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin: 30px 0;
     color: #ffffff;
     display: grid;
-    margin-bottom: 40px;
 }
 .social-media-container .social-box{
     text-align: center;
-    padding: 16px;
-    column-gap: 12px;
+    padding: 14px;
 }
 .social-media-container .social-box a{
     font-size: 4rem;
     text-decoration: none;
     color: #ffffff;
-    border: 3px solid #ffffff;
+    /*border: 3px solid #ffffff;*/
     padding: 0.3rem 0.5rem;
-    border-radius: 12px;
+    border-radius: 26px;
     margin-right: 40px;
 }
 .social-media-container .social-box a:hover{

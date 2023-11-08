@@ -476,7 +476,12 @@ section:nth-child(1) {
     line-height: 1.6rem;
 }
 /*personal-details*/
-/*Bottom Area*/
+
+/*-----About Page-----*/
+
+
+/*project page*/
+/*--gallery--*/
 #gallery{
     padding-top: 20px;
     display: block;
@@ -506,12 +511,20 @@ section:nth-child(1) {
     padding: 10px 30px;
     background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
 }
-.container .owner-wrapper .image{
-    width: 250px;
-    height: 280px;
-    background-color: #567D80;
+.container .owner-wrapper li{
     padding: 10px;
-    margin: 14px;
+    background-color: #567D80;
+    margin: 26px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+.container .owner-wrapper .image{
+    width: 200px;
+    height: 270px;
+    background-color: #ffffff;
+    /*padding: 10px;
+    margin: 14px;*/
     border-radius: 50px;
 }
 .container .owner-wrapper .image img{
@@ -545,8 +558,58 @@ section:nth-child(1) {
     border:2px solid #ffffff;
     transition: all 0.3s ease-in-out;
 }
-/*Bottom Area*/
-/*-----About Page-----*/
+/*--gallery--*/
+/* Animate the project images */
+
+
+.owner-wrapper li:nth-child(1) { animation: fadeInUp 0.5s 0.2s forwards; }
+.owner-wrapper li:nth-child(2) { animation: fadeInUp 0.5s 0.4s forwards; }
+.owner-wrapper li:nth-child(3) { animation: fadeInUp 0.5s 0.6s forwards; }
+.owner-wrapper li:nth-child(4) { animation: fadeInUp 0.5s 0.8s forwards; }
+.owner-wrapper li:nth-child(5) { animation: fadeInUp 0.5s 1s forwards; }
+.owner-wrapper li:nth-child(6) { animation: fadeInUp 0.5s 1.2s forwards; }
+.owner-wrapper li:nth-child(7) { animation: fadeInUp 0.5s 1.4s forwards; }
+.owner-wrapper li:nth-child(8) { animation: fadeInUp 0.5s 1.6s forwards; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate the "Return to Top" link */
+.back-top a {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-top a:hover {
+    background-color: #0056b3;
+}
+
+.back-top a.show {
+    display: block;
+    animation: fadeIn 0.5s 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*project page*/
 
 
 /*Contact Form*/

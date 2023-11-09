@@ -494,6 +494,7 @@ section:nth-child(1) {
     padding: 100px 50px;
 }
 .container .card{
+    color: #fff;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -535,52 +536,45 @@ section:nth-child(1) {
     height: 100%;
     object-fit: cover;
 }
-/*.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container .card .content{
+    position: absolute;
     width: 100%;
-    height: auto;
-    background-color: #E2EEF8;
-}
-.container .owner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px 30px;
-    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
-}
-.container .owner-wrapper li{
-    text-align: center;
-    line-height: 34px;
-    font-weight: 500;
-    color: #fff;
-    padding: 10px;
-    background-color: #4C7276;
-    margin: 26px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s, transform 0.4s;
-}
-.container .owner-wrapper .image{
-    width: 200px;
-    height: 270px;
-    background-color: #ffffff;
-    !*padding: 10px;
-    margin: 14px;*!
-    border-radius: 50px;
-}
-.container .owner-wrapper .image img{
-    background-size: cover;
+    text-align: justify;
+    padding: 0 30px;
+    top: 200px;
+    height: 35px;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    border: 3px solid #ffffff;
-}*/
+    transition: 0.6s;
+}
+.container .card:hover .content{
+    height: 250px;
+    top: 80px;
+}
+.container .card .content h2{
+    text-align: center;
+    line-height: 2.4rem;
+}
+.container .card .content p{
+    color: #6F8D90;
+}
+.container .card .content a{
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #579196;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+.container .card .content a:hover{
+    color: #045B62;
+    background-color: #fff;
+}
+
 .back-top{
     display: flex;
     align-items: center;

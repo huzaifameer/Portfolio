@@ -581,6 +581,7 @@ section:nth-child(1) {
     justify-content: center;
     font-size: 0.7rem;
     padding: 18px 0;
+    margin-bottom: 20px;
 }
 .back-top a h3{
     background-color: #ffffff;
@@ -624,6 +625,14 @@ section:nth-child(1) {
 }
 
 /*project page*/
+
+
+/*blog page*/
+.section{
+    width: 100%;
+    height: 1200px;
+}
+/*blog page*/
 
 /*------------Media Queries-------------*/
 @media only screen and (min-width: 900px) {

@@ -783,7 +783,12 @@ form .action input{
     padding: 0 20px 0 22px;
     margin-right: 10px;
 }
-
+.item input{
+    color: #fff;
+}
+.full textarea{
+    color: #fff;
+}
 form .action input[type="submit"]{
     background: white;
     color: #045B62;

@@ -8,13 +8,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script
-            src="https://kit.fontawesome.com/64d58efce2.js"
-            crossorigin="anonymous"
-    ></script>
 </head>
-<body>
 
+<body style="background-color: #555555">
+<div class="header">
+    <header id="navbar">
+        <!--Nav Bar-->
+        <a href="#" class="logo">
+            <span>	حُذَيْفَة</span>
+        </a>
+        <!--Nav Bar-->
+        <!--Menu Icons-->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--Menu Icons-->
+
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Projects.html">Projects</a></li>
+            <li><a href="./BlogPage.html">Blogs</a></li>
+            <li><a class="contact-box" href="./ContactForm.html">Contact Me</a></li>
+
+        </ul>
+        <!--Links-->
+
+    </header>
+</div>
+<section class="contact-form">
+    <form action="">
+        <div class="title">
+            <h2>Contact</h2>
+        </div>
+        <div class="half">
+            <div class="item">
+                <label for="name">Name</label>
+                <input type="text" id = "name">
+            </div>
+            <div class="item">
+                <label for="email">EMAIL</label>
+                <input type="text" id = "email">
+            </div>
+        </div>
+        <div class="full">
+            <label for="message">MESSAGE</label>
+            <textarea name="" id = "message"></textarea>
+        </div>
+        <div class="action">
+            <input type="submit" value = "SEND MESSAGE">
+        </div>
+    </form>
+</section>
 </body>
 <script src="../JavaScript/Main.js"></script>
 </html>

@@ -867,7 +867,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     .p-header nav ul {
         display: block;
     }
-    .p-header nav ul li a {
+    .p-header nav ul > li a {
         margin: 5px 0;
     }
     .p-header.active{

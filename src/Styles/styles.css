@@ -354,15 +354,23 @@ section:nth-child(1) {
     align-items: center;
     justify-content: center;
 }
-.about-box span{
-    display: grid;
+.about-box .welcome{
+    display: flex;
     position: absolute;
     top: 50%;
     font-weight: 600;
     font-size: 4rem;
     padding: 12px;
     color: #ffffff;
+
 }
+.about-box .welcome span:nth-child(1){ animation: blink 1s 0.4s ease-in-out forwards;}
+.about-box .welcome span:nth-child(2){ animation: blink 1s 0.8s ease-in-out forwards;}
+.about-box .welcome span:nth-child(3){ animation: blink 1s 1.2s ease-in-out forwards;}
+.about-box .welcome span:nth-child(4){ animation: blink 1s 1.6s ease-in-out forwards;}
+.about-box .welcome span:nth-child(5){ animation: blink 1s 2.0s ease-in-out forwards;}
+.about-box .welcome span:nth-child(6){ animation: blink 1s 2.4s ease-in-out forwards;}
+.about-box .welcome span:nth-child(7){ animation: blink 1s 2.8s ease-in-out forwards;}
 /*personal nav*/
 .p-header {
     background-color: transparent;
@@ -447,7 +455,14 @@ section:nth-child(1) {
     line-height: 1.6rem;
 }
 /*personal-details*/
-
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.7;
+    }
+}
 /*-----About Page-----*/
 /*project page*/
 .project-intro{

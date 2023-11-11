@@ -388,7 +388,7 @@ section:nth-child(1) {
 .p-header nav ul {
     display: flex;
 }
-.p-header nav ul li a {
+.p-header nav ul > li a {
     display: grid;
     color: #C8CACE;
     font-weight: 500;
@@ -458,9 +458,6 @@ section:nth-child(1) {
 @keyframes blink {
     50%{
         opacity: 0;
-    }
-    100%{
-        opacity: 1;
     }
 }
 /*-----About Page-----*/

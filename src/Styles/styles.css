@@ -10,16 +10,14 @@
     text-decoration: none;
     user-select: none;
 }
-
 img {
     max-width: 100%;
 }
-
 body {
     color: black;
     background-color: #CCE4FD;
 }
-
+/*nav bar styles*/
 header {
     position: fixed;
     width: 100%;
@@ -32,11 +30,9 @@ header {
     padding: 6px 50px 6px 20px;
     transition: 0.5s linear;
 }
-
 section:nth-child(1) {
     padding: 20px 100px;
 }
-
 .logo {
     width: 5rem;
 }
@@ -65,7 +61,6 @@ section:nth-child(1) {
 .navbar {
     display: flex;
 }
-
 .navbar a {
     padding: 12px 14px;
     color: #fff;
@@ -74,7 +69,6 @@ section:nth-child(1) {
     font-weight: 600;
     margin-right: 6px;
 }
-
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
@@ -582,7 +576,6 @@ section:nth-child(1) {
     position: relative;
     opacity: 0;
     transform: translateY(20px);
-    /*transition: opacity 0.4s, transform 0.4s;*/
 }
 .container .card:hover{
     height: 280px;

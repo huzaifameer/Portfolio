@@ -557,22 +557,6 @@ section:nth-child(1) {
     background: #045B62;
     border:  2px solid #ffffff;
 }
-/*@media screen and (max-width: 900px) {
-    #slide1:checked ~ #controls label:nth-child(2),
-    #slide2:checked ~ #controls label:nth-child(3),
-    #slide3:checked ~ #controls label:nth-child(4),
-    #slide4:checked ~ #controls label:nth-child(1),
-    #slide1:checked ~ #controls label:nth-last-child(2),
-    #slide2:checked ~ #controls label:nth-last-child(3),
-    #slide3:checked ~ #controls label:nth-last-child(4),
-    #slide4:checked ~ #controls label:nth-last-child(1) {
-        margin: 0;
-    }
-    #slides {
-        max-width: calc(100% - 140px);
-        margin: 0 auto;
-    }
-}*/
 /*slider*/
 .container{
     position: relative;
@@ -698,8 +682,6 @@ section:nth-child(1) {
 .container .card:nth-child(4) { animation: fadeInUp 0.5s 0.8s forwards; }
 .container .card:nth-child(5) { animation: fadeInUp 0.5s 1s forwards; }
 .container .card:nth-child(6) { animation: fadeInUp 0.5s 1.2s forwards; }
-
-
 
 /*project page*/
 

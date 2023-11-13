@@ -404,7 +404,6 @@ section:nth-child(1) {
 /*personal-details*/
 #personal{
     padding-top: 15px;
-    /*background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);*/
     height: auto;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -947,7 +946,6 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         flex-direction: row;
         row-gap: 18px;
     }
-
 }
 @media (max-width: 480px){
     form .half{

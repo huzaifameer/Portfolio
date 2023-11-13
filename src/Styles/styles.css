@@ -384,44 +384,6 @@ section:nth-child(1) {
     line-height: 1.6rem;
 }
 /*personal-details ending*/
-/*-----About Page ending-----*/
-
-/*project page styling*/
-.project-intro{
-    margin-top: 90px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.project-intro .intro-para{
-    display: grid;/*displayed as grid to make responsive*/
-    width: 100%;
-    text-align: justify;
-    font-size: 1rem;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    line-height: 1.5rem;
-    letter-spacing: 1.3px;
-    margin: 0 20px;
-    padding: 40px 20px;
-    border-radius: 40px;
-}
-/*--project card--*/
-#projects , #gallery{
-    padding-top: 20px;
-    display: block;
-    /*used a gradiant color combination*/
-    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
-}
-.project-text ,.gallery-text{
-    color: #ffffff;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 500;
-}
 /*slider styles in common*/
 #slider {/*outer slides style*/
     margin: 30px auto;
@@ -500,48 +462,87 @@ section:nth-child(1) {
     width: 20px;
     height: 20px;
     border-radius:100%;
-    background: #ccc;
+    background: #ccc;/*setting a grayish color to the icon*/
     margin: 0 10px;
 }
 #slide1:checked ~ #bullets label:nth-child(1),
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3),
 #slide4:checked ~ #bullets label:nth-child(4) {
-    background: #045B62;
+    background: #045B62;/*adding same styles for all the 4 bullets*/
     border:  2px solid #ffffff;
 }
-/*slider*/
+/*slider styles ending*/
+/*-----About Page ending-----*/
+
+/*project page styling*/
+.project-intro{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-intro .intro-para{
+    display: grid;/*displayed as grid to make responsive*/
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    line-height: 1.5rem;
+    letter-spacing: 1.3px;
+    margin: 0 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+}
+/*--project card--*/
+#projects , #gallery{/*same styling is used for the gallery section*/
+    padding-top: 20px;
+    display: block;
+    /*used a gradiant color combination*/
+    background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
+}
+.project-text ,.gallery-text{/*same styling is used for the gallery section*/
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
 .container{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
+    gap: 100px 50px;/*adding a gap between the containers*/
     padding: 100px 50px;
 }
 .container .card{
     color: #fff;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start;/*getting the element to the start*/
     justify-content: center;
     height: 250px;
     width: 300px;
     background-color: #045B62;
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);/*using rgba colors*/
     transition: all 0.6s ease-in-out,transform 0.4s;
-    cursor: pointer;
+    cursor: pointer;/*changing into a pointer*/
     position: relative;
     opacity: 0;
     transform: translateY(20px);
 }
-.container .card:hover{
+.container .card:hover{/*styling for the project cards*/
     height: 280px;
 }
-.container .card .img-box{
+.container .card .img-box{/*styles for the images of the card*/
     position: absolute;
-    top: 20px;
+    top: 20px;/*get a space from the top*/
     width: 240px;
     height: 150px;
     background-color: #579196;
@@ -552,13 +553,13 @@ section:nth-child(1) {
 .container .card:hover .img-box{
     top: -80px;
     scale: 0.75;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);/*using a shadow effect to the boxes*/
 }
-.container .card:hover .img-box img{
+.container .card:hover .img-box img{/*handling the images styles directly*/
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;/*getting the whole space*/
     height: 100%;
     object-fit: cover;
 }
@@ -570,9 +571,9 @@ section:nth-child(1) {
     top: 200px;
     height: 35px;
     overflow: hidden;
-    transition: 0.6s;
+    transition: 0.6s;/*delaying the text according to the animation*/
 }
-.container .card:hover .content{
+.container .card:hover .content{/*styling the content when the card is hovered*/
     height: 250px;
     top: 80px;
 }
@@ -580,7 +581,7 @@ section:nth-child(1) {
     text-align: center;
     line-height: 2.4rem;
 }
-.container .card .content p{
+.container .card .content p{/*paragraph styling*/
     color: #6F8D90;
 }
 .container .card .content a{
@@ -591,7 +592,7 @@ section:nth-child(1) {
     background-color: #579196;
     color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 500;/*weighting the texts*/
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
     text-align: center;
@@ -601,7 +602,7 @@ section:nth-child(1) {
     background-color: #fff;
 }
 /*--project card--*/
-.back-top{
+.back-top{/*returning to the top buttons styles*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -609,7 +610,7 @@ section:nth-child(1) {
     padding: 18px 0;
     margin-bottom: 20px;
 }
-.back-top a h3{
+.back-top a h3{/*texts styling*/
     background-color: #ffffff;
     padding: 5px 10px;
     border-radius: 20px;
@@ -620,7 +621,7 @@ section:nth-child(1) {
     transform: translateY(10px);
     transition: opacity 0.3s, transform 0.3s;
 }
-.back-top a h3:hover{
+.back-top a h3:hover{/*hovered styles*/
     background-color: #1D3032;
     color: #ffffff;
     border:2px solid #ffffff;
@@ -628,18 +629,17 @@ section:nth-child(1) {
     animation: fadeIn 0.5s 0.5s forwards;
 }
 /* Animate the project images */
-.container .card:nth-child(1) { animation: fadeInUp 0.5s 0.2s forwards; }
-.container .card:nth-child(2) { animation: fadeInUp 0.5s 0.4s forwards; }
-.container .card:nth-child(3) { animation: fadeInUp 0.5s 0.6s forwards; }
-.container .card:nth-child(4) { animation: fadeInUp 0.5s 0.8s forwards; }
-.container .card:nth-child(5) { animation: fadeInUp 0.5s 1s forwards; }
-.container .card:nth-child(6) { animation: fadeInUp 0.5s 1.2s forwards; }
-
+.container .card:nth-child(1) { animation: fadeIn 0.5s 0.2s forwards; }
+.container .card:nth-child(2) { animation: fadeIn 0.5s 0.4s forwards; }
+.container .card:nth-child(3) { animation: fadeIn 0.5s 0.6s forwards; }
+.container .card:nth-child(4) { animation: fadeIn 0.5s 0.8s forwards; }
+.container .card:nth-child(5) { animation: fadeIn 0.5s 1s forwards; }
+.container .card:nth-child(6) { animation: fadeIn 0.5s 1.2s forwards; }
+/*delaying each image by 0.2s*/
 /*project page*/
 
-
-/*blog page*/
-.section{
+/*blog page styling*/
+.section{/*main outer styles for the blog page*/
     margin: 80px auto;
     box-sizing: border-box;
     padding: 30px 40px;
@@ -648,8 +648,8 @@ section:nth-child(1) {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 30px;
-
+    /* responsive grid layout with columns that are at least 250 pixels wide and can grow to take available space */
+    grid-gap: 30px;/* Sets the gaps between the grids items to 30 pixels */
 }
 .section .blog-card{
     background-color: #A4A4A3;
@@ -657,33 +657,27 @@ section:nth-child(1) {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     padding: 15px;
 }
-.section .blog-card .image-section{
+.section .blog-card .image-section{/*blog image style*/
     min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .blog-card .img-1{
     background-image: url("../Assets/blog-img-3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .blog-card .img-2{
     background-image: url("../Assets/blog-img-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .blog-card .img-3{
     background-image: url("../Assets/blog-img-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+}/*common styles are in .image-section*/
 .blog-card .content {
     text-align: center;
     padding: 15px 10px;
 }
 .blog-card .content h2{
-    letter-spacing: 2px;
+    letter-spacing: 2px;/*adding a letter spacing*/
     color: #3D3837;
 }
 .blog-card .content p{
@@ -696,61 +690,55 @@ section:nth-child(1) {
     margin-bottom: 12px;
     margin-top: 12px;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none;/*removing the text decorations from the texts*/
     color: #fff;
     background-color: #045B62;
     padding: 10px;
     display: inline-block;
     letter-spacing: 2px;
-
 }
 .blog-card .content a:hover{
     background-color: #fff;
     color: #045B62;
-    transition: all 0.6s ease;
+    transition: all 0.6s ease;/*cursor moving effect*/
 }
-/*blog page*/
+/*blog page e]styles ends*/
 .contact-form{
     margin-top: 80px;
 }
 /*contact form*/
-form{
-    color: #fff;
+form{/*styling the form*/
+    color: #fff;/*using separate background colors and letter colors*/
     background: linear-gradient(to right, #023C41, #013135, #00252B, #001820, #000D16, #00030C);
     width: 640px;
     margin: 50px auto;
-    max-width: 97%;
+    max-width: 97%;/*getting a max width to balance the form*/
     border-radius: 4px;
     padding: 55px 30px;
 }
-
-form .title h2{
+form .title h2{/*styling the forms heading*/
     letter-spacing: 6px;
     border-bottom: 1px solid white;
     display: inline-block;
     padding-bottom: 8px;
     margin-bottom: 32px;
 }
-
 form .half{
     display: flex;
     justify-content: space-between;
 }
-
 form .half .item{
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
     width: 48%;
 }
-
 form label{
     display: block;
     font-size: 13px;
     letter-spacing: 3.5px;
     margin-bottom: 16px;
 }
-
 form .half .item input{
     border-radius: 4px;
     border: 1px solid white;
@@ -761,13 +749,11 @@ form .half .item input{
     background: transparent;
     font-size: 17px;
 }
-
 form .full{
     margin-bottom: 24px;
 }
-
-form .full textarea{
-    background: transparent;
+form .full textarea{/*text area styling*/
+    background: transparent;/*full transparent*/
     border-radius: 4px;
     border: 1px solid white;
     outline: 0;
@@ -776,12 +762,10 @@ form .full textarea{
     height: 200px;
     font-size: 17px;
 }
-
 form .action{
     margin-bottom: 32px;
 }
-
-form .action input{
+form .action input{/*styling the inputs*/
     background: transparent;
     border-radius: 4px;
     border: 1px solid white;
@@ -790,17 +774,17 @@ form .action input{
     font-weight: 600;
     height: 44px;
     letter-spacing: 3px;
-    outline: 0;
+    outline: 0;/*removing the outline */
     padding: 0 20px 0 22px;
     margin-right: 10px;
 }
 .item input{
-    color: #fff;
+    color: #fff;/*input texts color*/
 }
 .full textarea{
-    color: #fff;
+    color: #fff;/*messages text color*/
 }
-form .action input[type="submit"]{
+form .action input[type="submit"]{/*styling the send message button*/
     background: white;
     color: #045B62;
 }
@@ -809,24 +793,13 @@ form .action input[type="submit"]:hover{
     color: #fff;
     transition: all 0.6s ease-in-out;
 }
-form .icons a{
-    border: 1px solid white;
-    border-radius: 50%;
-    line-height: 36px;
-    text-align: center;
-    font-weight: 600;
-    width: 38px;
-    margin-right: 10px;
-}
-
 form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
-    background: rgba(255,255,255,0.075);
+    background: rgba(255,255,255,0.075);/*using a semi transparent color*/
 }
-
-/*contact form*/
+/*contact form styling ended*/
 
 /*------------Media Queries-------------*/
-@media (max-width:880px ){
+@media (max-width:880px ){/*screen when the maximum width is 880px*/
     header{
         padding: 12px 4%;
     }
@@ -860,17 +833,8 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     .p-header {
         padding: 0 30px;
     }
-    #slide1:checked ~ #controls label:nth-child(2),
-    #slide2:checked ~ #controls label:nth-child(3),
-    #slide3:checked ~ #controls label:nth-child(4),
-    #slide4:checked ~ #controls label:nth-child(1),
-    #slide1:checked ~ #controls label:nth-last-child(2),
-    #slide2:checked ~ #controls label:nth-last-child(3),
-    #slide3:checked ~ #controls label:nth-last-child(4),
-    #slide4:checked ~ #controls label:nth-last-child(1) {
-        margin: 0;
-    }
     #slides {
+        /* maximum width of the slides container to 100% of its parent's width minus 140 pixels, allowing to make responsive*/
         max-width: calc(100% - 140px);
         margin: 0 auto;
     }
@@ -901,6 +865,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     .p-header nav ul {
         display: block;
     }
+    /* Adding styles to anchor links within list items in the navigation menu of the p-header */
     .p-header nav ul > li a {
         margin: 5px 0;
     }
@@ -911,7 +876,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         margin-top: 80px;
     }
 }
-
+/*screen for the medium devices*/
 @media only screen and (max-width: 600px) {
     .social-media-container{
         justify-content: space-between;
@@ -937,6 +902,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         row-gap: 18px;
     }
 }
+/*screen for the small devices -1*/
 @media (max-width: 480px){
     form .half{
         flex-direction: column;
@@ -963,16 +929,16 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
     .text-box h1{
          font-size: 40px;
-         line-height: 45px;
+         line-height: 45px;/*decreasing the line height*/
      }
     .text-box span{
         display: none;
     }
     .wrapper .dynamic-txts span{
-        display: none;
+        display: none;/*hiding the texts*/
     }
 }
-
+/*screen for the small devices -2*/
 @media only screen and (max-width: 300px) {
     .project-intro {
         margin-top: 100px;
@@ -994,45 +960,40 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
     .text-box .row{
         display: flex;
-        flex-direction: row;
-        row-gap: 18px;
+        flex-direction: row;/*arranging as a row*/
+        row-gap: 18px;/*creating a gap*/
         font-size: 16px;
     }
     .wrapper .dynamic-txts span{
-        display: none;
+        display: none;/*hiding the wrapper classes elements*/
     }
 }
 /*------------Media Queries-------------*/
 
 /*----------Animations-----------*/
-@keyframes slide {
-    100%{
+@keyframes slide {/*animation for sliding */
+    100%{/*moves the element to a position 240 pixels above its initial position */
         top: -240px;
     }
 }
-@keyframes typing {
-    40%, 60%{
+@keyframes typing {/* animation for typing effect */
+    40%, 60%{/* Between 40% and 60%, moves the element to the right*/
         left: calc(100% + 12px);
     }
-    100%{
+    100%{/* resets the element's position to the initial left value */
         left: 0;
     }
 }
-@keyframes fadeInUp {
+@keyframes fadeIn {/* animation for fading in with top movement */
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0);/* in the end of the animation, resets the vertical
+        position to its initial value */
     }
 }
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes blink {
+@keyframes blink {/* animation for blinking */
     50%{
-        opacity: 0;
+        opacity: 0;/* sets opacity to 0,to create a blinking effect */
     }
 }
 /*----------Animations-----------*/

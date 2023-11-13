@@ -13,10 +13,6 @@
 img {/*common styles for all the images*/
     max-width: 100%;
 }
-body {/*common style for the body*/
-    color: black;
-    background-color: #CCE4FD;
-}
 /*nav bar styles*/
 header {/*header styles*/
     position: fixed;
